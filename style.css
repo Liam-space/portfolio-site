@@ -14,17 +14,16 @@ body {
 header {
   text-align: center;
   margin-bottom: 3rem;
+  background-color: #0a0a23;
+  padding: 0.5rem;
 }
 
 header h1 {
   font-size: 3rem;
-  color: #0a0a23;
+  color: #f5f5f5;
+
 }
 
-header p {
-  font-size: 1.2rem;
-  color: #555;
-}
 
 section {
   margin-bottom: 2.5rem;
@@ -40,4 +39,8 @@ h2 {
   padding: 1rem;
   border-left: 4px solid #0a0a23;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+a {
+  color: #333;
 }
