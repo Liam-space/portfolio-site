@@ -3,21 +3,14 @@ window.onload = function () {
   alert("Welcome to Liam's Portfolio!");
 };
 
-const toggle = document.getElementById("theme-toggle");
-const body = document.body;
+document.addEventListener('DOMContentLoaded', function () {
+  const toggleSwitch = document.getElementById('theme-toggle');
 
-// Check local storage
-if (localStorage.getItem("theme") === "dark") {
-  body.classList.add("dark-mode");
-  toggle.checked = true;
-}
-
-toggle.addEventListener("change", () => {
-  if (toggle.checked) {
-    body.classList.add("dark-mode");
-    localStorage.setItem("theme", "dark");
+  if (toggleSwitch) {
+    toggleSwitch.addEventListener('change', function () {
+      document.body.classList.toggle('dark-mode');
+    });
   } else {
-    body.classList.remove("dark-mode");
-    localStorage.setItem("theme", "light");
+    console.error('Theme toggle switch not found.');
   }
 });
